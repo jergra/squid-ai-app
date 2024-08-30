@@ -1,6 +1,6 @@
-August 24, 2024
+August 30, 2024
 
-dev/trip-planner
+dev/squid-ai-app
 
 from tutorial:
 Full Stack AI Web App Tutorial (TypeScript/React/AI/LLMs)
@@ -17,15 +17,11 @@ Squid console:
 https://console.squid.cloud/application/8xj1s2g1ozvwomh5xf-dev
 
 Deployed:
-  https://squid-ai-project-frontend.vercel.app/
+  https://squid-ai-app-frontend.vercel.app/
 
-The frontend code is at:
-  https://github.com/jergra/Squid-AI-project-frontend
+The backend is deployed by going to dev/squid-ai-app/backend and typing 'npm run deploy'.
 
-The backend is deployed by going to dev/trip-planner/backend and typing 'npm run deploy'
-
-The frontend is deployed by going to dev/trip-planner/frontend and putting this code on github then deploying using vercel.
-
+The frontend is deployed by specifying 'frontend' as the root folder at vercel.
 
 
 
