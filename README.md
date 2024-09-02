@@ -2,13 +2,13 @@ August 30, 2024
 
 dev/squid-ai-app
 
-from tutorial:
+modification of tutorial:
 Full Stack AI Web App Tutorial (TypeScript/React/AI/LLMs)
 https://www.youtube.com/watch?v=kel893RIvHA
 
 by Tech With Tim
 
-This is a trip-planning app with a frontend/backend and AI integration using Squid AI.
+This is a trip-planning app with a frontend/backend and AI integration using Squid AI. React, Vite, typescript. Clerk authentication has been added.
 
 local start:
   npm run start
