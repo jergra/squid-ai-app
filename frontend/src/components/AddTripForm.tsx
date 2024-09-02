@@ -2,8 +2,11 @@ import { useEffect, useState } from "react"
 import './AddTripForm.css'
 import { useCollection } from "@squidcloud/react"
 import { Trip } from "../types"
+import { useUser } from "@clerk/clerk-react"
 
 function AddTrip() {
+    const {user} = useUser()
+    
     const [country, setCountry] = useState('')
     const [startDate, setStartDate] = useState('')
     const [endDate, setEndDate] = useState('')
@@ -26,7 +29,8 @@ function AddTrip() {
             country,
             startDate: new Date(startDate),
             endDate: new Date(endDate),
-            notes: []
+            notes: [],
+            email: user?.primaryEmailAddress?.emailAddress
         })
     }
 

@@ -4,5 +4,6 @@ export type Trip = {
     country: string
     notes: string[]
     id: string
+    email: any
 }
 

@@ -1,3 +1,4 @@
+import { useUser } from '@clerk/clerk-react';
 import { Trip } from '../types';
 import TripCard from './Trip';
 import "./Trip.css"
@@ -10,9 +11,13 @@ type Props = {
 };
 
 function TripList({ trips, onDelete, onAddNote, onDeleteNote }: Props) {
-  return (
+  const {user} = useUser()
+  
+  const filteredTrips = trips.filter(trip => trip.email === user?.primaryEmailAddress?.emailAddress);
+  
+    return (
     <div className="trip-list-container">
-      {trips && trips.map((trip, index) => <TripCard 
+      {filteredTrips && filteredTrips.map((trip, index) => <TripCard 
         key={index}
         trip={trip}
         index={index}
