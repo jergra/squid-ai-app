@@ -28,8 +28,8 @@ function AddTrip() {
         tripsCollection.doc().insert({
             id: tripId,
             country,
-            startDate: new Date(startDate),
-            endDate: new Date(endDate),
+            startDate: new Date(`${startDate}T00:00:00`),
+            endDate: new Date(`${endDate}T23:59:59`),
             notes: [],
             email: user?.primaryEmailAddress?.emailAddress
         })

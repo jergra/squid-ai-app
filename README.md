@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=kel893RIvHA
 
 by Tech With Tim
 
-This is a trip-planning app with a frontend/backend and AI integration using Squid AI. React, Vite, typescript. Clerk authentication has been added.
+This is a trip-planning app with a frontend/backend and AI integration using Squid AI. React, Vite, typescript. Clerk authentication has been added. Landing page design by ClaudeAI.
 
 local start:
   npm run start
@@ -23,9 +23,6 @@ The backend is deployed by going to dev/squid-ai-app/backend and typing 'npm run
 
 The frontend is deployed by specifying 'frontend' as the root folder at vercel.
 
-TO DO:
-improve the header
-fix ai response dates to match
 
 
 
