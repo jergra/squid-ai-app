@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import AddTrip from './components/AddTripForm';
 import TripList from './components/TripList';
