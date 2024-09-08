@@ -29,7 +29,7 @@ function AddTrip() {
             id: tripId,
             country,
             startDate: new Date(`${startDate}T00:00:00`),
-            endDate: new Date(`${endDate}T23:59:59`),
+            endDate: new Date(`${endDate}T00:00:00`),
             notes: [],
             email: user?.primaryEmailAddress?.emailAddress
         })
