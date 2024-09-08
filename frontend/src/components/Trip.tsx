@@ -44,21 +44,24 @@ function TripCard({ trip, onDelete, onAddNote, onDeleteNote, index }: Props) {
           </li>
         ))}
       </ul>
-      <div className="note-form">
+      <form 
+        onSubmit={(e) => {e.preventDefault(); handleAddNote(trip.id, newNote)}}
+        className="note-form"
+      >
         <input
           type="text"
           className="note-input"
           value={newNote}
           onChange={(e) => setNewNote(e.target.value)}
-          placeholder="Add a note"
+          placeholder=""
         />
         <button
           className="add-note-button"
-          onClick={() => handleAddNote(trip.id, newNote)}
+          type='submit'
         >
           Add Note
         </button>
-      </div>
+      </form>
     </div>
   );
 }

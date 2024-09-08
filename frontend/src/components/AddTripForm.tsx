@@ -18,7 +18,8 @@ function AddTrip() {
             if (response.ok) return response.json()
         }).then((data) => {
             const countryNames = data.map((country: any) => country.name.common)
-            setCountries(countryNames)
+            const countryNamesSorted = countryNames.sort()
+            setCountries(countryNamesSorted)
         }).catch((error) => console.error(error))
     }, [])
 
