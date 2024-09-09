@@ -1,6 +1,7 @@
 import { format } from 'date-fns';
 import { Trip } from '../types';
 import { useState } from 'react';
+import { X } from 'lucide-react';
 
 type Props = {
   trip: Trip;
@@ -36,10 +37,10 @@ function TripCard({ trip, onDelete, onAddNote, onDeleteNote, index }: Props) {
           <li key={noteIndex} className="note">
             {note}{' '}
             <button
-              className="delete-button"
+              className='delete-X'
               onClick={() => onDeleteNote(trip.id, noteIndex)}
             >
-              x
+              <X size={20} />
             </button>
           </li>
         ))}

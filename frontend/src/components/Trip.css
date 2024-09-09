@@ -85,10 +85,24 @@
     background-color: darkred;
   }
   
+  .delete-X {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 29px;
+    padding-top: 4px;
+    margin-left: 15px;
+    border-radius: 5px;
+  }
+  
+  .delete-X:hover {
+    background-color: darkred;
+  }
+  
   .note {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
   }
   

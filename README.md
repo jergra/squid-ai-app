@@ -21,7 +21,7 @@ Deployed:
 
 The backend is deployed by going to dev/squid-ai-app/backend and typing 'npm run deploy'.
 
-The frontend is deployed by specifying 'frontend' as the root folder at vercel.
+The frontend is deployed by specifying 'frontend' as the root folder at vercel. Vercel handles this specification automatically.
 
 
 
