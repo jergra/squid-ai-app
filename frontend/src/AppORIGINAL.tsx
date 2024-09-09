@@ -7,7 +7,7 @@ import AskAI from './components/AskAI';
 import { SignedIn, SignedOut, SignInButton, UserButton, useUser } from "@clerk/clerk-react";
 import { PlaneTakeoff, NotebookPen, Bot } from 'lucide-react';
 
-const FeatureItem = ({ icon, text }: any) => (
+const FeatureItem = ({ icon, text}: any) => (
   <li className="feature-item">
     {icon}
     <span>{text}</span>
@@ -16,27 +16,25 @@ const FeatureItem = ({ icon, text }: any) => (
 
 const LandingPage = () => (
   <div className="landing-page">
-    <div className="landing-content">
-      <h1>Welcome to TripTracker</h1>
-      <p>Plan, organize, and remember your travels with ease.</p>
-      <ul className="feature-list">
-        <FeatureItem 
-          icon={<PlaneTakeoff size={24} />}
-          text="Create and manage your trip itineraries"
-        />
-        <FeatureItem 
-          icon={<NotebookPen size={24} />}
-          text="Add notes and memories to each trip"
-        />
-        <FeatureItem 
-          icon={<Bot size={24} />}
-          text="Use AI assistance for travel planning"
-        />
-      </ul>
-      <SignInButton mode="modal">
-        <button className="sign-in-button">Get Started</button>
-      </SignInButton>
-    </div>
+    <h1>Welcome to TripTracker</h1>
+    <p>Plan, organize, and remember your travels with ease.</p>
+    <ul className="feature-list">
+      <FeatureItem 
+        icon={<PlaneTakeoff size={24} />}
+        text="Create and manage your trip itineraries"
+      />
+      <FeatureItem 
+        icon={<NotebookPen size={24} />}
+        text="Add notes and memories to each trip"
+      />
+      <FeatureItem 
+        icon={<Bot size={24} />}
+        text="Use AI assistance for travel planning"
+      />
+    </ul>
+    <SignInButton mode="modal">
+      <button className="sign-in-button">Get Started</button>
+    </SignInButton>
   </div>
 );
 
